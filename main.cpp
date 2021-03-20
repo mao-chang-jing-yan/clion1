@@ -1,24 +1,67 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <vector>
+#include "classes/Point.h"
+#include "file/File_.h"
+
 
 using namespace std;
 
 
 void fi(int *x);
+vector<string> split(const string &str,const string &pattern);
 int main() {
-    int x = 1,*p;
-    p = &x;
-    fi(p);
-//    x = 2;
-//    fi(&x);
-    int a[10][1], **pa;
-//    a[0]=1;
-//    *pa=&a[0][0];
+//    int x = 1,*p;
+//    p = &x;
+//    fi(p);
+////    x = 2;
+////    fi(&x);
+//    int a[10][1], **pa;
+////    a[0]=1;
+////    *pa=&a[0][0];
+//    Point P1, P2, p3(1,2);
+//    P1.setPoint(1,2);
+//    P2.setPoint(3,4);
+//    int *p;
+//    p = &P1.getPoint()[0];
+//    p3 = P1 + P2;
+//    p3 = p3 + P1 + P2 - P1;
+//    cout << p3 << P2 << ' ' << p[0] <<' ' << P1.getPoint()[0];
+//    string str;
+//    str = "qwqewe,weqw,we ,";
+//
+//    vector<std::string> resultVec;
+//    resultVec = split(str, " ");
+//
+//    cout << resultVec[0];
+
+    File_ f;
+    f.read_csv("213", "21");
+    f.read_csv();
 
 
     return 0;
 }
+
+vector<string> split(const string &str,const string &pattern)
+{
+    //const char* convert to char*
+    char * strc = new char[strlen(str.c_str())+1];
+    strcpy(strc, str.c_str());
+    std::vector<std::string> resultVec;
+    char* tmpStr = strtok(strc, pattern.c_str());
+    while (tmpStr != NULL)
+    {
+        resultVec.emplace_back(tmpStr);
+        tmpStr = strtok(NULL, pattern.c_str());
+    }
+
+    delete[] strc;
+
+    return resultVec;
+};
+
 
 void fi(int *x){
 //    cout << *x;
@@ -29,7 +72,7 @@ void fi(int *x){
     // 以读模式打开文件
     ifstream infile;
 //    infile.open("../files/naruto.json");
-    infile.open("../files/personrelkg.txt");
+    infile.open("../files/personrelkg.csv");
 
     cout << "Reading from the file" << endl;
     infile >> data;
@@ -44,18 +87,15 @@ void fi(int *x){
 
     while(getline(infile,temp))
     {
-//        infile >> temp;
-//        cout << temp << endl;
-        char m[100];
-        strcpy(m, temp.c_str());
-
-        for (int i = 0; i < 100; ++i) {
-//            string n(m[0:i]);
-            if (m[i] == ','){
-
-                cout << temp[i] << endl;
-            }
+        a++;
+        cout << a;
+        vector<string> weee = split(temp, ",");
+        for (auto & i : weee) {
+            cout << " - ";
+            cout << i;
         }
+        cout << endl;
+
     }
 
     // 关闭打开的文件

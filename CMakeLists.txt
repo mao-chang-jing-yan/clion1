@@ -3,4 +3,4 @@ project(untitled)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(untitled main.cpp point.cpp point.h file/file.h file/file.cpp)
+add_executable(untitled main.cpp file/File_.h file/File_.cpp classes/Point.cpp classes/Point.h)
