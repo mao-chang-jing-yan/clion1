@@ -1,0 +1,1002 @@
+[
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "加藤断",
+        "relationship": "女友"
+    },
+    {
+        "entity_1": "加藤断",
+        "entity_2": "千手纲手",
+        "relationship": "男友"
+    },
+    {
+        "entity_1": "加藤断",
+        "entity_2": "静音",
+        "relationship": "叔叔"
+    },
+    {
+        "entity_1": "静音",
+        "entity_2": "加藤断",
+        "relationship": "侄女"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "静音",
+        "relationship": "上司"
+    },
+    {
+        "entity_1": "静音",
+        "entity_2": "千手纲手",
+        "relationship": "下属"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "漩涡水户",
+        "relationship": "孙女"
+    },
+    {
+        "entity_1": "漩涡水户",
+        "entity_2": "千手纲手",
+        "relationship": "祖母"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "千手柱间",
+        "relationship": "孙女"
+    },
+    {
+        "entity_1": "千手柱间",
+        "entity_2": "千手纲手",
+        "relationship": "祖父"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "绳树",
+        "relationship": "姐姐"
+    },
+    {
+        "entity_1": "绳树",
+        "entity_2": "千手纲手",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "野原琳",
+        "relationship": "队友"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "野原琳",
+        "relationship": "队友"
+    },
+    {
+        "entity_1": "波风水门",
+        "entity_2": "野原琳",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "旗木卡卡西",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "野原琳",
+        "entity_2": "旗木卡卡西",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "波风水门",
+        "entity_2": "旗木卡卡西",
+        "relationship": "恩师"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "宇智波带土",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "波风水门",
+        "entity_2": "宇智波带土",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "野原琳",
+        "entity_2": "宇智波带土",
+        "relationship": "队友"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "波风水门",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "波风水门",
+        "entity_2": "漩涡玖辛奈",
+        "relationship": "丈夫"
+    },
+    {
+        "entity_1": "漩涡玖辛奈",
+        "entity_2": "波风水门",
+        "relationship": "妻子"
+    },
+    {
+        "entity_1": "波风水门",
+        "entity_2": "自来也",
+        "relationship": "弟子"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "波风水门",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "迈特凯",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "迈特凯",
+        "entity_2": "旗木卡卡西",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "大蛇丸",
+        "entity_2": "千手纲手",
+        "relationship": "同门"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "千手纲手",
+        "relationship": "并称三忍"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "大蛇丸",
+        "relationship": "同门"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "大蛇丸",
+        "relationship": "同门"
+    },
+    {
+        "entity_1": "大蛇丸",
+        "entity_2": "自来也",
+        "relationship": "同门"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "自来也",
+        "relationship": "并称三忍"
+    },
+    {
+        "entity_1": "大蛇丸",
+        "entity_2": "宇智波鼬",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "大蛇丸",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "旋涡鸣人",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "自来也",
+        "relationship": "指导老师"
+    },
+    {
+        "entity_1": "大蛇丸",
+        "entity_2": "宇智波佐助",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "大蛇丸",
+        "relationship": "想要的容器"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "漩涡玖辛奈",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "漩涡玖辛奈",
+        "entity_2": "旋涡鸣人",
+        "relationship": "母亲"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "春野樱",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "春野樱",
+        "relationship": "队友"
+    },
+    {
+        "entity_1": "春野樱",
+        "entity_2": "旋涡鸣人",
+        "relationship": "队友"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "日向雏田",
+        "relationship": "丈夫"
+    },
+    {
+        "entity_1": "日向雏田",
+        "entity_2": "旋涡鸣人",
+        "relationship": "妻子"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "宇智波佐助",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "旋涡鸣人",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "春野樱",
+        "entity_2": "宇智波鼬",
+        "relationship": "弟媳"
+    },
+    {
+        "entity_1": "宇智波美琴",
+        "entity_2": "宇智波鼬",
+        "relationship": "母亲"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "宇智波鼬",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "宇智波富岳",
+        "entity_2": "宇智波鼬",
+        "relationship": "父亲"
+    },
+    {
+        "entity_1": "宇智波止水",
+        "entity_2": "宇智波鼬",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "春野樱",
+        "relationship": "丈夫"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "春野樱",
+        "relationship": "大伯子"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "宇智波美琴",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "宇智波美琴",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "春野樱",
+        "entity_2": "宇智波佐助",
+        "relationship": "妻子"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "宇智波佐助",
+        "relationship": "哥哥"
+    },
+    {
+        "entity_1": "宇智波美琴",
+        "entity_2": "宇智波佐助",
+        "relationship": "母亲"
+    },
+    {
+        "entity_1": "宇智波富岳",
+        "entity_2": "宇智波佐助",
+        "relationship": "父亲"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "宇智波富岳",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "宇智波富岳",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "宇智波止水",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "宇智波止水",
+        "entity_2": "宇智波鼬",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "宇智波斑",
+        "relationship": "协助者"
+    },
+    {
+        "entity_1": "宇智波斑",
+        "entity_2": "宇智波带土",
+        "relationship": "利用者"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "春野樱",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "宇智波佐助",
+        "relationship": "恩师"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "鬼灯水月",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "鬼灯水月",
+        "entity_2": "宇智波佐助",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "漩涡香磷",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "漩涡香磷",
+        "entity_2": "宇智波佐助",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "重吾",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "重吾",
+        "entity_2": "宇智波佐助",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "日向雏田",
+        "entity_2": "日向日足",
+        "relationship": "女儿"
+    },
+    {
+        "entity_1": "日向日足",
+        "entity_2": "日向雏田",
+        "relationship": "父亲"
+    },
+    {
+        "entity_1": "日向雏田",
+        "entity_2": "漩涡玖辛奈",
+        "relationship": "儿媳"
+    },
+    {
+        "entity_1": "漩涡玖辛奈",
+        "entity_2": "日向雏田",
+        "relationship": "婆婆"
+    },
+    {
+        "entity_1": "日向雏田",
+        "entity_2": "日向日差",
+        "relationship": "侄女"
+    },
+    {
+        "entity_1": "日向日差",
+        "entity_2": "日向雏田",
+        "relationship": "叔叔"
+    },
+    {
+        "entity_1": "日向雏田",
+        "entity_2": "日向花火",
+        "relationship": "姐姐"
+    },
+    {
+        "entity_1": "日向花火",
+        "entity_2": "日向雏田",
+        "relationship": "妹妹"
+    },
+    {
+        "entity_1": "日向雏田",
+        "entity_2": "日向宁次",
+        "relationship": "堂妹"
+    },
+    {
+        "entity_1": "日向宁次",
+        "entity_2": "日向雏田",
+        "relationship": "堂兄"
+    },
+    {
+        "entity_1": "日向宁次",
+        "entity_2": "旋涡鸣人",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "日向宁次",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "山中井野",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "山中井野",
+        "entity_2": "旋涡鸣人",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "秋道丁次",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "秋道丁次",
+        "entity_2": "旋涡鸣人",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "旋涡鸣人",
+        "entity_2": "奈良鹿丸",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "奈良鹿丸",
+        "entity_2": "旋涡鸣人",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "秋道丁次",
+        "entity_2": "奈良鹿丸",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "奈良鹿丸",
+        "entity_2": "秋道丁次",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "猿飞阿斯玛",
+        "entity_2": "奈良鹿丸",
+        "relationship": "老师"
+    },
+    {
+        "entity_1": "奈良鹿丸",
+        "entity_2": "猿飞阿斯玛",
+        "relationship": "学生"
+    },
+    {
+        "entity_1": "猿飞阿斯玛",
+        "entity_2": "秋道丁次",
+        "relationship": "老师"
+    },
+    {
+        "entity_1": "秋道丁次",
+        "entity_2": "猿飞阿斯玛",
+        "relationship": "学生"
+    },
+    {
+        "entity_1": "猿飞阿斯玛",
+        "entity_2": "旗木卡卡西",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "猿飞阿斯玛",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "猿飞阿斯玛",
+        "entity_2": "夕阳红",
+        "relationship": "夫妻"
+    },
+    {
+        "entity_1": "夕阳红",
+        "entity_2": "猿飞阿斯玛",
+        "relationship": "夫妻"
+    },
+    {
+        "entity_1": "猿飞阿斯玛",
+        "entity_2": "猿飞日斩",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "猿飞阿斯玛",
+        "relationship": "父亲"
+    },
+    {
+        "entity_1": "猿飞阿斯玛",
+        "entity_2": "猿飞木叶丸",
+        "relationship": "叔叔"
+    },
+    {
+        "entity_1": "猿飞木叶丸",
+        "entity_2": "猿飞阿斯玛",
+        "relationship": "侄子"
+    },
+    {
+        "entity_1": "猿飞木叶丸",
+        "entity_2": "猿飞日斩",
+        "relationship": "孙子"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "猿飞木叶丸",
+        "relationship": "爷爷"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "自来也",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "猿飞日斩",
+        "relationship": "徒弟"
+    },
+    {
+        "entity_1": "千手柱间",
+        "entity_2": "猿飞日斩",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "千手柱间",
+        "relationship": "徒弟"
+    },
+    {
+        "entity_1": "千手柱间",
+        "entity_2": "千手扉间",
+        "relationship": "哥哥"
+    },
+    {
+        "entity_1": "千手扉间",
+        "entity_2": "千手柱间",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "千手柱间",
+        "entity_2": "宇智波斑",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "宇智波斑",
+        "entity_2": "千手柱间",
+        "relationship": "对手"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "宇智波斑",
+        "relationship": "下一世"
+    },
+    {
+        "entity_1": "宇智波斑",
+        "entity_2": "宇智波佐助",
+        "relationship": "上一世"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "志村团藏",
+        "relationship": "竞争对手"
+    },
+    {
+        "entity_1": "志村团藏",
+        "entity_2": "猿飞日斩",
+        "relationship": "竞争对手"
+    },
+    {
+        "entity_1": "佐井",
+        "entity_2": "志村团藏",
+        "relationship": "属下"
+    },
+    {
+        "entity_1": "志村团藏",
+        "entity_2": "佐井",
+        "relationship": "上司"
+    },
+    {
+        "entity_1": "佐井",
+        "entity_2": "漩涡鸣人",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "佐井",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "大和",
+        "entity_2": "漩涡鸣人",
+        "relationship": "队长"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "大和",
+        "relationship": "属下"
+    },
+    {
+        "entity_1": "大和",
+        "entity_2": "旗木卡卡西",
+        "relationship": "后辈"
+    },
+    {
+        "entity_1": "旗木卡卡西",
+        "entity_2": "大和",
+        "relationship": "前辈"
+    },
+    {
+        "entity_1": "大和",
+        "entity_2": "大蛇丸",
+        "relationship": "实验品"
+    },
+    {
+        "entity_1": "大蛇丸",
+        "entity_2": "大和",
+        "relationship": "制造者"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "自来也",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "猿飞日斩",
+        "relationship": "徒弟"
+    },
+    {
+        "entity_1": "猿飞日斩",
+        "entity_2": "千手纲手",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "千手纲手",
+        "entity_2": "猿飞日斩",
+        "relationship": "徒弟"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "我爱罗",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "我爱罗",
+        "entity_2": "漩涡鸣人",
+        "relationship": "好友"
+    },
+    {
+        "entity_1": "勘九郎",
+        "entity_2": "我爱罗",
+        "relationship": "哥哥"
+    },
+    {
+        "entity_1": "我爱罗",
+        "entity_2": "勘九郎",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "手鞠",
+        "entity_2": "我爱罗",
+        "relationship": "姐姐"
+    },
+    {
+        "entity_1": "我爱罗",
+        "entity_2": "手鞠",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "四代风影",
+        "entity_2": "我爱罗",
+        "relationship": "父亲"
+    },
+    {
+        "entity_1": "我爱罗",
+        "entity_2": "四代风影",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "手鞠",
+        "entity_2": "奈良鹿丸",
+        "relationship": "妻子"
+    },
+    {
+        "entity_1": "奈良鹿丸",
+        "entity_2": "手鞠",
+        "relationship": "丈夫"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "奇拉比",
+        "relationship": "徒弟"
+    },
+    {
+        "entity_1": "奇拉比",
+        "entity_2": "漩涡鸣人",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "艾",
+        "entity_2": "奇拉比",
+        "relationship": "哥哥"
+    },
+    {
+        "entity_1": "奇拉比",
+        "entity_2": "艾",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "艾",
+        "entity_2": "达鲁伊",
+        "relationship": "上司"
+    },
+    {
+        "entity_1": "达鲁伊",
+        "entity_2": "艾",
+        "relationship": "下属"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "阿修罗",
+        "relationship": "转世"
+    },
+    {
+        "entity_1": "阿修罗",
+        "entity_2": "漩涡鸣人",
+        "relationship": "前世"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "千手柱间",
+        "relationship": "转世"
+    },
+    {
+        "entity_1": "千手柱间",
+        "entity_2": "漩涡鸣人",
+        "relationship": "前世"
+    },
+    {
+        "entity_1": "宇智波佐助",
+        "entity_2": "因陀罗",
+        "relationship": "转世"
+    },
+    {
+        "entity_1": "因陀罗",
+        "entity_2": "宇智波佐助",
+        "relationship": "前世"
+    },
+    {
+        "entity_1": "六道仙人",
+        "entity_2": "因陀罗",
+        "relationship": "父亲"
+    },
+    {
+        "entity_1": "因陀罗",
+        "entity_2": "六道仙人",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "阿修罗",
+        "entity_2": "因陀罗",
+        "relationship": "弟弟"
+    },
+    {
+        "entity_1": "因陀罗",
+        "entity_2": "阿修罗",
+        "relationship": "哥哥"
+    },
+    {
+        "entity_1": "六道仙人",
+        "entity_2": "大筒木辉夜",
+        "relationship": "儿子"
+    },
+    {
+        "entity_1": "大筒木辉夜",
+        "entity_2": "六道仙人",
+        "relationship": "母亲"
+    },
+    {
+        "entity_1": "自来也",
+        "entity_2": "漩涡长门",
+        "relationship": "师傅"
+    },
+    {
+        "entity_1": "漩涡长门",
+        "entity_2": "自来也",
+        "relationship": "徒弟"
+    },
+    {
+        "entity_1": "弥彦",
+        "entity_2": "漩涡长门",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "漩涡长门",
+        "entity_2": "弥彦",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "小南",
+        "entity_2": "漩涡长门",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "漩涡长门",
+        "entity_2": "小南",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "漩涡长门",
+        "relationship": "师弟"
+    },
+    {
+        "entity_1": "漩涡长门",
+        "entity_2": "漩涡鸣人",
+        "relationship": "师兄"
+    },
+    {
+        "entity_1": "黑绝",
+        "entity_2": "宇智波带土",
+        "relationship": "同伙"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "黑绝",
+        "relationship": "同伙"
+    },
+    {
+        "entity_1": "黑绝",
+        "entity_2": "大筒木辉夜",
+        "relationship": "孩子"
+    },
+    {
+        "entity_1": "大筒木辉夜",
+        "entity_2": "黑绝",
+        "relationship": "母亲"
+    },
+    {
+        "entity_1": "黑绝",
+        "entity_2": "宇智波斑",
+        "relationship": "利用者"
+    },
+    {
+        "entity_1": "宇智波斑",
+        "entity_2": "黑绝",
+        "relationship": "工具人"
+    },
+    {
+        "entity_1": "漩涡鸣人",
+        "entity_2": "猿飞木叶丸",
+        "relationship": "大哥"
+    },
+    {
+        "entity_1": "猿飞木叶丸",
+        "entity_2": "漩涡鸣人",
+        "relationship": "小弟"
+    },
+    {
+        "entity_1": "迪达拉",
+        "entity_2": "宇智波带土",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "黑绝",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "干柿鬼鲛",
+        "entity_2": "宇智波带土",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "干柿鬼鲛",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "干柿鬼鲛",
+        "entity_2": "宇智波鼬",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "宇智波鼬",
+        "entity_2": "干柿鬼鲛",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "迪达拉",
+        "entity_2": "宇智波带土",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "宇智波带土",
+        "entity_2": "迪达拉",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "迪达拉",
+        "entity_2": "三代土影",
+        "relationship": "孙子"
+    },
+    {
+        "entity_1": "三代土影",
+        "entity_2": "迪达拉",
+        "relationship": "爷爷"
+    },
+    {
+        "entity_1": "迪达拉",
+        "entity_2": "黑土",
+        "relationship": "哥哥"
+    },
+    {
+        "entity_1": "黑土",
+        "entity_2": "迪达拉",
+        "relationship": "妹妹"
+    },
+    {
+        "entity_1": "迪达拉",
+        "entity_2": "蝎",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "蝎",
+        "entity_2": "迪达拉",
+        "relationship": "同伴"
+    },
+    {
+        "entity_1": "千代婆婆",
+        "entity_2": "蝎",
+        "relationship": "奶奶"
+    },
+    {
+        "entity_1": "蝎",
+        "entity_2": "千代婆婆",
+        "relationship": "孙子"
+    },
+    {
+        "entity_1": "千代婆婆",
+        "entity_2": "我爱罗",
+        "relationship": "救命恩人"
+    },
+    {
+        "entity_1": "我爱罗",
+        "entity_2": "千代婆婆",
+        "relationship": "被救者"
+    },
+    {
+        "entity_1": "我爱罗",
+        "entity_2": "三代土影",
+        "relationship": "晚辈"
+    },
+    {
+        "entity_1": "三代土影",
+        "entity_2": "我爱罗",
+        "relationship": "前辈"
+    }
+]
