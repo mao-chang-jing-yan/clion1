@@ -16,8 +16,10 @@ private:
 public:
     File_();
     File_(string path, string pattern);
-    void read_csv(string path, string pattern);
-    void read_csv();
+    explicit File_(string path);
+    deque<deque<string>> read_csv(string path, string pattern);
+    deque<deque<std::__1::string>> read_csv();
+    static deque<string> split(const string &str, const string &pattern);
 };
 
 

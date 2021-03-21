@@ -36,9 +36,19 @@ int main() {
 //
 //    cout << resultVec[0];
 
-    File_ f;
-    f.read_csv("213", "21");
-    f.read_csv();
+    File_ f("../files/personrelkg.csv");
+    deque<deque<string>> a = f.read_csv();
+    for (int i = 0; i < a.size(); ++i) {
+        cout << i;
+
+        for (int j = 0; j < a[0].size(); ++j) {
+            cout << " - " << a[i][j];
+        }
+        cout << endl;
+
+    }
+//    cout << a[0][0];
+//    f.read_csv();
 
 
     return 0;
