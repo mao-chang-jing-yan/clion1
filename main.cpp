@@ -9,6 +9,7 @@
 #include "classes/GraphList.h"
 
 #include<ctime>
+
 int SUM = 0;
 clock_t start_time,end_time;
 mutex mu;
@@ -28,9 +29,9 @@ int main() {
 //读取csv文件并输出
 //    fi();
 //    开启多线程，读取csv文件，构建知识图谱并输出
-    thread_tu();
+//    thread_tu();
 //    读取csv文件，构建知识图谱并输出
-//    graphList_tu();
+    graphList_tu();
 //    测试点类
 //    point_test();
 
@@ -69,6 +70,19 @@ void graphList_tu(){
     graphList.addNode("mao122", "amo23df", "we", 32);
     graphList.addNode("mao122", "amo23ge", "we", 14324);
     graphList.addNode("mao122", "amo23222", "we", 45);
+
+
+    a.resize(14);
+    for (auto & i : a) {
+        cout << SUM;
+        SUM++;
+        graphList.addNode(i[3], i[0], i[2], 0);
+        for (auto & j : i) {
+            cout << " - " << j;
+        }
+        cout << endl;
+
+    }
     graphList.printGraph();
 }
 
@@ -78,10 +92,12 @@ void thread_tu(){
 
     GraphList graphList;
     int si = a.size();
+    cout << si << endl;
     si = 100;
 
-    int thread_num = 30;
+    int thread_num = 3;
     deque<thread*> thread_list = deque<thread*>();
+    deque<deque<string>> b = deque<deque<string>>();
     for (int j = 0; j < thread_num; ++j) {
         int m;
         int n;
@@ -91,35 +107,37 @@ void thread_tu(){
         if(j == thread_num - 1){
             n = si;
         }
-//        cout << m << " - " << n << endl;
+        cout << m << " - " << n << endl;
 
-        deque<deque<string>> b;
+        b.empty();
         for (int i = m; i < n; ++i) {
             b.push_back(a[i]);
         }
         auto* t = new thread(add_point, &graphList, b);
-        thread_list.push_back(t);
+        t->join();
+//        delete t;
+//        thread_list.push_back(t);
     }
 
-    for (auto & k : thread_list) {
-        if (k->joinable())
-        {
-            k->join();
-            delete k;
-        }
-//        cout << k->get_id() << endl;
-//        k->join();
-    }
-    thread_list.empty();
+//    for (auto & k : thread_list) {
+//        if (k->joinable())
+//        {
+//            k->join();
+//            delete k;
+//        }
+////        cout << k->get_id() << endl;
+////        k->join();
+//    }
+//    thread_list.empty();
     graphList.printGraph();
 
 }
 
 void add_point(GraphList *g, const deque<deque<string>>& de){
     for (int i = 0; i < de.size(); ++i) {
-        if(!mu.try_lock()){
-            mu.lock();
-        };
+//        if(!mu.try_lock()){
+//            mu.lock();
+//        };
 //        mu.lock();
         cout << SUM << " --- ";
         SUM++;
@@ -130,7 +148,8 @@ void add_point(GraphList *g, const deque<deque<string>>& de){
             cout << " - " << de[i][j];
         }
         cout << endl;
-        mu.unlock();
+        mu.native_handle();
+//        mu.unlock();
 //        g->printGraph();
 
     };

@@ -2,6 +2,7 @@
 #include <cstdio>
 #include <string>
 #include <deque>
+#include <vector>
 
 using namespace std;
 
@@ -21,19 +22,27 @@ typedef struct Edge{
     int weight = 0;
     struct Node *next;
     struct Node *parent;
+    struct Edge *nextParentEdge;
+    struct Edge *nextNextEdge;
 }edge, *edge1;
 // 点
 typedef struct Node{
-    string Name = "";
+    string name = "";
     int sum;
-    struct deque<Edge> EdgeList;
+    struct Edge *edge;
 }node, *node1;
 
+struct Map{
+//    struct Map *this_;
+    struct Map *next;
+    struct Map *parent;
+    struct Node *node;
+};
 
 class GraphList {
 private:
-    int sum;
-    deque<Node> NodeList = deque<Node>();
+//    int sum;
+    Map *NodeList;
 
 public:
     ~GraphList();
@@ -42,6 +51,11 @@ public:
     void createGraph();
     void addNode(const string& name, const string& nextName, const string& relationship, int weight);
     void addNode(const string& name, const string& nextName, int weight);
+
+    Node *searchNode(const string& name);
+    Map *searchMap(const string& name);
+    edge *searchParentEdge(const Node* search_node, const string& relationship);
+    edge *searchNextEdge(const Node* search_node, const string& relationship);
     void printGraph();
 };
 

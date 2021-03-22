@@ -8,19 +8,11 @@ using namespace std;
 
 
 GraphList::GraphList() {
-    this->sum = 0;
-    this->NodeList = deque<Node>();
+
 }
 
 GraphList::~GraphList() {
-    for (int i = 0; i < sum; ++i){
-        Node tmp = NodeList[i];
 
-        for (int j = 0; j < tmp.sum; ++j) {
-            tmp.EdgeList.clear();
-        }
-        NodeList.clear();
-    }
 }
 
 void GraphList::createGraph() {
@@ -28,126 +20,198 @@ void GraphList::createGraph() {
 }
 
 void GraphList::printGraph() {
-    for (auto & i : this->NodeList) {
-        if (1 == 1){
 
-        cout << "node - " << i.Name << " " <<i.sum <<endl;
-            for (auto & j : i.EdgeList) {
-                cout
-                << "parentName : "
-                << j.parent->Name
-                << " nextName : "
-                << j.next->Name
-                << " relationship : "
-                << j.relationship
-                << " weight : "
-                << j.weight
-                << " parent->sum : "
-                << j.parent->sum
-//                << "  -  "
-//                << &i
-//                << "  "
-//                << &j.parent
-//                << "  "
-//                << (&i == &j.parent)
-                << endl;
-            }
+    Map* pMap=this->NodeList;
+    if(pMap==NULL)
+        return ;
+    else
+    {
+        cout << "node - " <<pMap->node->name <<endl;
+        Edge *pEdge = pMap->node->edge;
+        cout
+        << " parentName - "
+        << pEdge->parentName
+        << " nextName - "
+        << pEdge->nextName
+        << " relationship - "
+        << pEdge->relationship
+        << " weight - "
+        << pEdge->weight
+        << endl;
+
+        while (pEdge->nextNextEdge!=NULL)
+        {
+            pEdge = pEdge->nextNextEdge;
+            cout
+                    << " parentName - "
+                    << pEdge->parentName
+                    << " nextName - "
+                    << pEdge->nextName
+                    << " relationship - "
+                    << pEdge->relationship
+                    << " weight - "
+                    << pEdge->weight
+                    << endl;
         }
 
-    }
 
+        while(pMap->next!=NULL)
+        {
+            pMap = pMap->next;
+            pEdge = pMap->node->edge;
+            cout
+                    << " parentName - "
+                    << pEdge->parentName
+                    << " nextName - "
+                    << pEdge->nextName
+                    << " relationship - "
+                    << pEdge->relationship
+                    << " weight - "
+                    << pEdge->weight
+                    << endl;
+
+            while (pEdge->nextNextEdge!=NULL)
+            {
+                pEdge = pEdge->nextNextEdge;
+                cout
+                        << " parentName - "
+                        << pEdge->parentName
+                        << " nextName - "
+                        << pEdge->nextName
+                        << " relationship - "
+                        << pEdge->relationship
+                        << " weight - "
+                        << pEdge->weight
+                        << endl;
+            }
+        }
+    }
 
 }
 
 void GraphList::addNode(const string& name, const string& nextName,const string& relationship, int weight) {
-    auto *node = new Node();
-    auto *nextNode = new Node();
-    auto *edge1 = new Edge();
-    node->Name = name;
-//    node->sum = 1;
-    nextNode->Name = nextName;
-    nextNode->sum = 0;
-    edge1->nextName = nextName;
-    edge1->parentName = name;
-    edge1->weight = weight;
-    edge1->parent = node;
-    edge1->next = nextNode;
-    edge1->relationship = relationship;
+    Node *node = new Node();
+    Edge *edge = new Edge();
+    Map *map = new Map();
+    Map *this_map = this->searchMap(name);
+    Map *next_map = this->searchMap(nextName);
+    Edge *this_edge = this->searchParentEdge(this_map->node, relationship);
+    Edge *next_edge = this->searchNextEdge(next_map->node, relationship);
 
-    int flag[] = {0, 0, 0, 0};
-    for (auto & i : this->NodeList) {
-        for (auto & j : i.EdgeList) {
-            if(i.Name == name){
-                flag[0] = 1;
-            }
-            if(j.next->Name == nextName){
-                flag[1] = 1;
-            }
-            if(j.relationship == relationship){
-                flag[2] = 1;
-            }
-            if(j.weight == weight){
-                flag[3] = 1;
+    edge->parentName = name;
+    edge->nextName = name;
+    edge->parent = node;
+    edge->relationship = relationship;
+    edge->weight = weight;
+
+    node->name = name;
+    node->sum = 1;
+    node->edge = edge;
+
+    map->node = node;
+
+    Map* pMap=this->NodeList;
+    if (pMap==NULL){
+        pMap = map;
+        pMap->node = node;
+    } else{
+        int a[] = {0,0,0,0};
+        if (this_map){
+            a[0] = 1;
+        }
+        if (next_map){
+            a[1] = 1;
+        }
+        if (a[0]==0 and a[1] == 0){
+            map->next = pMap;
+            this->NodeList = map;
+        }
+        if(a[0]==1 and a[1] == 0 and this_map){
+            if (!this_edge){
+                edge->parent = this_map->node;
+                edge->nextNextEdge = this_map->node->edge;
+                this_map->node->edge = edge;
             }
         }
+        if (a[0] == 0 and a[1] ==1 and next_map){
+//            edge->parent = next_map->node;
+            if(!this->searchNextEdge(next_map->node, relationship)){
+                edge->nextNextEdge = next_map->node->edge;
 
-        if(i.EdgeList.size()>1){
-            i.EdgeList[0].parent = &i;
-        }
 
-
-    }
-
-    if(flag[0] == 1 and flag[1] == 1){
-        delete node;
-        delete edge1;
-        delete nextNode;
-        return;
-    }
-//    for (auto & i : this->NodeList) {
-//        cout << flag[0] << "  " <<flag[1] <<"  "<< i.Name  << "  " << name <<endl;
-//    }
-    if(flag[0] == 0 and flag[1] == 0){
-        node->EdgeList.push_back(*edge1);
-        node->sum = node->EdgeList.size();
-        this->NodeList.push_back(*node);
-        this->NodeList.push_back(*nextNode);
-        this->sum = this->NodeList.size();
-        return;
-    }
-    if(flag[0] == 1 and flag[1] == 0){
-        for (auto & i : this->NodeList) {
-            if (i.Name == name){
-                edge1->parentName = i.Name;
-                edge1->parent = &i;
-                i.EdgeList.push_back(*edge1);
-                i.sum = i.EdgeList.size();
-                this->NodeList.push_back(*nextNode);
-                this->sum = this->NodeList.size();
-                return;
             }
         }
     }
-    if(flag[0] == 0 and flag[1] == 1){
-        for (auto & i : this->NodeList) {
-            if (i.Name == nextName){
-                edge1->next = &i;
-                edge1->nextName = i.Name;
-                edge1->parent->sum = 1;
-                node->EdgeList.push_back(*edge1);
-//                node->sum = 1;
-                this->NodeList.push_back(*node);
-                this->sum = this->NodeList.size();
-                return;
-            }
-        }
-    }
-
 
 }
 
 void GraphList::addNode(const string &name, const string &nextName, int weight) {
 
+}
+
+Node *GraphList::searchNode(const string &name) {
+    Map* pMap=this->NodeList;
+    if(pMap!=NULL){
+        if (pMap->node->name == name){
+            return pMap->node;
+        }
+        while (pMap->next!=NULL){
+            pMap = pMap->next;
+            if (pMap->node->name == name){
+                return pMap->node;
+            }
+        }
+    }
+    return nullptr;
+}
+
+Map *GraphList::searchMap(const string &name) {
+    Map* pMap=this->NodeList;
+    if(pMap!=NULL){
+        if (pMap->node->name == name){
+            return pMap;
+        }
+        while (pMap->next!=NULL){
+            pMap = pMap->next;
+            if (pMap->node->name == name){
+                return pMap;
+            }
+        }
+    }
+    return nullptr;
+}
+
+edge *GraphList::searchParentEdge(const Node *search_node, const string& relationship) {
+    Edge *pEdge = search_node->edge;
+    if (pEdge!=NULL){
+        if (pEdge->relationship == relationship and pEdge->parent->name == search_node->name){
+            return pEdge;
+        }
+        while (pEdge->nextParentEdge){
+            pEdge = pEdge->nextParentEdge;
+            if (pEdge->relationship == relationship and pEdge->parent->name == search_node->name){
+                return pEdge;
+            }
+        }
+    }
+
+    return nullptr;
+}
+
+edge *GraphList::searchNextEdge(const Node *search_node, const string &relationship) {
+    Edge *pEdge = search_node->edge;
+    if (pEdge!=NULL){
+        if (pEdge->relationship == relationship and pEdge->next->name == search_node->name){
+            return pEdge;
+        }
+        while (pEdge->nextNextEdge){
+            pEdge = pEdge->nextNextEdge;
+            if (pEdge->relationship == relationship and pEdge->next->name == search_node->name){
+                return pEdge;
+            }
+        }
+    }
+    return nullptr;
 }
 
 
