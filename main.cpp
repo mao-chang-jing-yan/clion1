@@ -254,9 +254,9 @@ void fi(){
     string A = "",B = "",C = "";
     while(getline(infile,temp))
     {
-//        if (a>9){
-//            break;
-//        }
+        if (a>21000){
+            break;
+        }
         a++;
         cout << a;
         int k=0;

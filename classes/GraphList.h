@@ -41,8 +41,8 @@ typedef struct EdgeListMap{
 class GraphList {
 private:
     int sum;
-    NodeListMap *NodeList = new NodeListMap;
-    EdgeListMap *EdgeList = new EdgeListMap;
+    NodeListMap *NodeList = new NodeListMap();
+    EdgeListMap *EdgeList = new EdgeListMap();
 
 public:
     ~GraphList();
