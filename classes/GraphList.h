@@ -24,25 +24,50 @@ typedef struct Edge{
 }edge, *edge1;
 // 点
 typedef struct Node{
-    string Name = "";
+    string name = "";
     int sum;
-    struct deque<Edge> EdgeList;
+    struct EdgeListMap *thisNodeEdgeList;
 }node, *node1;
 
+typedef struct NodeListMap{
+    struct Node *thisNode;
+    struct NodeListMap *next;
+}nodeListMap;
+typedef struct EdgeListMap{
+    struct Edge *thisEdge;
+    struct EdgeListMap *next;
+}edgeListMap;
 
 class GraphList {
 private:
     int sum;
-    deque<Node> NodeList = deque<Node>();
+    NodeListMap *NodeList = new NodeListMap;
+    EdgeListMap *EdgeList = new EdgeListMap;
 
 public:
     ~GraphList();
     GraphList();
 
+    Node *addNode(const string &name, const basic_string<char> basicString, const basic_string<char> string1, int i);
+    Node *getNode(const string &name);
+    void deleteNode(const string &name);
+    Edge *addNodesEdge(Node* node, Edge* edge);
+    Edge *addEdge(const string& name, const string& nextName, const string& relationship, int weight);
+    Edge *addEdge(const string& name, const string& nextName);
+    Edge *getEdge(const string& name, const string& nextName, const string& relationship, int weight);
+    Edge *getEdge(const string& name, const string& nextName);
+    void deleteEdge(const string& name, const string& nextName, const string& relationship, int weight);
+    void deleteEdge(const string& name, const string& nextName);
+    void thisEdgeListAdd(const string& name, const string& nextName, const string& relationship, int weight);
+    void thisNodeListAdd(const string& name);
+
     void createGraph();
-    void addNode(const string& name, const string& nextName, const string& relationship, int weight);
-    void addNode(const string& name, const string& nextName, int weight);
+//    void addNode(const string& name, const string& nextName, const string& relationship, int weight);
+//    void addNode(const string& name, const string& nextName, int weight);
     void printGraph();
+    void printNodeListMap();
+    void printEdgeListMap();
+
 };
 
 
